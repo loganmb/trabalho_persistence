@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence version = "2.0"
+	xmlns="http://java.sun.com/xml/ns/persistence"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://java.sun.com/xml/ns/persistence http://java.sun.com/xml/ns/persistence/persistence_2_0.xsd">
+	<persistence-unitname = "exercicio_JPA_mysql">
+		<exclude-unlisted-classes>false</exclude-unlisted-classes>
+		<properties>
+			<propertyname = hibernate.connection.username "
+				value="root" />
+			<propertyname = hibernate.connection.password "
+				value="password" />
+			<propertyname = hibernate.connection.driver_class "
+				value="com.mysql.jdbc.Driver" />
+			<propertyname = hibernate.connection.url "
+				value="jdbc:mysql://localhost:3306/forum" />
+			<propertyname = hibernate.cache.provider_class "
+				value="org.hibernate.cache.NoCacheProvider" />
+			<propertyname = hibernate.hbm2ddl.auto " value="update" />
+			<propertyname = hibernate.format_sql " value="true" />
+		</properties>
+	</persistence-unit>
+	</persistence>
